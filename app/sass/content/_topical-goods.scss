@@ -1,0 +1,68 @@
+.topical-goods {
+  height: 100vh;
+  position: relative;
+  .logo img {
+    width: 153px;
+    margin-top: 26px;
+  }
+  .header-contact {
+    margin-top: 26px;
+    span {
+      margin-top: 19px;
+      display: inline-block;
+    }
+    button {
+      color: #0098cd;
+    }
+  }
+  .money {
+    position: absolute;
+    bottom: 20px;
+    right: 0px;
+    z-index: -2;
+  }
+  .fire {
+    position: absolute;
+    top: 50px;
+    left: 0;
+    z-index: -2;
+  }
+  .item{
+    position: relative;
+      span{
+        width: 90px;
+        height: 90px;
+        background-color: #fee133;
+        border-radius: 50%;
+        display: block;
+        position: absolute;
+        top: 9px;
+        left: 130px;
+        z-index: -1;
+      }
+    img{
+      height: 120px;
+      text-align: center;
+    }
+  }
+  h1{
+    margin-top: 250px;
+    margin-bottom: 60px;
+    color: black;
+    font-family: 'Lora', serif;
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 18px;
+  }
+  p{
+    width: 304px;
+    height: 49px;
+    text-align: center;
+    color: black;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 32px;
+    margin: 30px auto;
+  }
+}
