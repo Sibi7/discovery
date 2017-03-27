@@ -82,15 +82,10 @@ gulp.task('sass', function () { // Создаем таск Sass
         }));
 });
 
-gulp.task('browser-sync', function () { // Создаем таск browser-sync
+gulp.task('browser-sync', function() { // Создаем таск browser-sync
     browserSync({ // Выполняем browserSync
-        proxy: {
-            target: '' // Директория для сервера - app
-        },
-        ghostMode: {
-            clicks: true,
-            forms: true,
-            scroll: true
+        server: { // Определяем параметры сервера
+            baseDir: 'discovery' // Директория для сервера - app
         },
         notify: false // Отключаем уведомления
     });
