@@ -1,0 +1,122 @@
+.section-quote {
+  margin-top: 180px;
+  position: relative;
+  height: 100%;
+  width: 100%;
+  background-color: #a4d5ff;
+  .quotes {
+    margin-top: 180px;
+    p {
+      width: 994px;
+      height: 178px;
+      color: black;
+      margin: 80px auto;
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 32px;
+    }
+  }
+  .logo img {
+    width: 153px;
+    margin-top: 26px;
+  }
+  .header-contact {
+    margin-top: 26px;
+    span {
+      margin-top: 19px;
+      display: inline-block;
+      color: #fff;
+    }
+    button {
+      color: #fff;
+      border-color: #fff;
+    }
+
+  }
+  &__slider {
+    @include display-flex(flex);
+    @include flex-wrap(wrap);
+    @include flex-direction(roo);
+    @include justify-content(space-between);
+    position: relative;
+    float: left;
+    width: calc(100% - (117px * 2));
+    margin-left: 117px;
+    margin-right: 117px;
+    margin-bottom: 332px;
+  }
+  &__item {
+    display: block;
+    position: relative;
+    width: 100%;
+    float: left;
+    &--img {
+      width: 90px;
+      height: 90px;
+      overflow: hidden;
+      display: block;
+      position: relative;
+      float: left;
+      border-radius: 50%;
+      margin-left: calc(50% - (90px/2));
+      z-index: 2;
+      img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+    &--name {
+      float: left;
+      position: relative;
+      padding-left: 20px;
+      @include box-sizing(border-box);
+      h3 {
+        color: black;
+        font-family: 'Lora', serif;
+        font-size: 20px;
+        font-weight: 400;
+        margin: 0;
+        margin-top: 24px;
+      }
+      p {
+        color: black;
+        font-family: 'Ubuntu', sans-serif;
+        font-size: 16px;
+        font-weight: 300;
+        margin: 0;
+      }
+    }
+
+  }
+  .owl-controls{
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    .owl-next{
+      float: right;
+      display: block;
+      position: relative;
+      width: 18px;
+      height: 32px;
+      color: transparent;
+      background-image: url('../img/icons/next.png');
+      background-repeat: no-repeat;
+      object-fit: contain;
+    }
+    .owl-prev{
+      float: left;
+      display: block;
+      position: relative;
+      color: transparent;
+      width: 18px;
+      background-image: url('../img/icons/prev.png');
+      background-repeat: no-repeat;
+      object-fit: contain;
+      height: 32px;
+    }
+  }
+}

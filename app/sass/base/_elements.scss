@@ -24,3 +24,35 @@
   font-weight: 300;
   line-height: 36px;
 }
+.modal-body{
+  input{
+    width: 100%;
+    margin-top: 35px;
+    border: none;
+    display: block;
+    border-bottom: 1px solid #222222;
+    &::placeholder {
+      color: #000000;
+      opacity: 1;
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 14px;
+      font-weight: 300;
+      line-height: 30px;
+    }
+
+  }
+  button{
+    display: block;
+    background-color: #fee133;
+    border: none;
+    width: 180px;
+    margin: 40px auto;
+    height: 65px;
+    border-radius: 100px;
+    &:hover{
+      transition: 300ms ease;
+      transform: scale(1.03);
+
+    }
+  }
+}

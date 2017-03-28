@@ -2,7 +2,8 @@
   position: relative;
   display: block;
   background-color: #fee133;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   .logo img {
     width: 153px;
     margin-top: 26px;
@@ -41,19 +42,17 @@
     line-height: 30px;
   }
   .margin-text-1{
-    margin-top: 180px;
-    box-sizing: border-box;
+    margin-top: 230px;
+    margin-bottom: 280px;
   }
   .margin-text-2{
-    margin-top: 140px;
-    box-sizing: border-box;
+    margin-top: 180px;
   }
   .margin-text-3{
-    margin-top: 90px;
-    box-sizing: border-box;
+    margin-top: 130px;
   }
   .margin-text-4{
-    margin-top: 50px;
-    box-sizing: border-box;
+    margin-top: 80px;
+
   }
 }

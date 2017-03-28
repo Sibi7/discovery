@@ -1,6 +1,7 @@
 .stand-out{
   position: relative;
-  height: 100vh;
+  height: 100%;
+  width: 100%;
   .logo img {
     width: 153px;
     margin-top: 26px;
@@ -18,7 +19,7 @@
   h1{
     width: 899px;
     height: 88px;
-    margin: 100px auto;
+    margin: 180px auto 85px auto;
     color: black;
     font-family: 'Lora', serif;
     font-size: 36px;
@@ -33,7 +34,7 @@
       background-color: #fee133;
       display: block;
       text-align: center;
-      margin: 0 auto 30px auto;
+      margin: 0 auto 40px auto;
       font-family: 'Lora', serif;
       font-size: 56px;
       font-weight: 400;
@@ -47,10 +48,9 @@
       font-size: 18px;
       font-weight: 300;
       line-height: 32px;
-      margin: 0 auto;
+      margin: 80px auto;
     }
     a{
-      margin-top: 100px;
       margin-left: 200px;
       display: inline-block;
       width: 132px;
@@ -60,6 +60,7 @@
       font-size: 18px;
       font-weight: 300;
       line-height: 24px;
+      margin-bottom: 400px;
     }
 
   }

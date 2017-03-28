@@ -1,6 +1,5 @@
 .successful-business{
   position: relative;
-  height: 100vh;
   display: block;
   background-image: url('../img/section4/bg.png');
   background-size: cover;
@@ -13,6 +12,7 @@
     span {
       margin-top: 19px;
       display: inline-block;
+      color: #fff;
     }
     button {
       color: #fff;
@@ -20,6 +20,7 @@
     }
   }
   h1{
+    text-align: center;
     width: 549px;
     height: 88px;
     color: black;
@@ -37,21 +38,70 @@
     font-size: 24px;
     font-weight: 400;
     line-height: 32px;
-    float: right;
-  }
-  .text-business{
-    img{
-      display: block;
-      float: left;
-    }
+    margin-left: 60px;
   }
   p{
-    width: 320px;
-    height: 113px;
+    margin-left: 60px;
+    width: 386px;
+    height: 145px;
     color: black;
     font-family: 'Ubuntu', sans-serif;
     font-size: 18px;
     font-weight: 300;
-    line-height: 32px;
+  }
+  .col-md-12 img{
+    display: block;
+    position: absolute;
+  }
+  .left-block .col-md-12{
+    margin-top: 50px;
+    margin-bottom: 200px;
+  }
+  .right-block .col-md-12{
+    margin-top: 250px;
+  }
+  .most-important{
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 100px;
+    width: 50%;
+    height: 350px;
+    background-color: white;
+    h2{
+      width: 247px;
+      height: 23px;
+      color: black;
+      font-family: 'Lora', serif;
+      font-size: 30px;
+      font-weight: 400;
+      line-height: 48px;
+      margin-top: 30px;
+      margin-left: 100px;
+    }
+    p{
+      width: 417px;
+      height: 78px;
+      margin-top: 50px;
+      color: black;
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 32px;
+      margin-left: 100px;
+    }
+    button{
+      width: 300px;
+      margin-top: 50px;
+      margin-left: 100px;
+      height: 60px;
+      color: black;
+      font-family: 'Ubuntu', sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      border-radius: 100px;
+      border: none;
+      background-color: #fee133;
+    }
   }
 }

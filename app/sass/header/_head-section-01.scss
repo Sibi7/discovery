@@ -1,7 +1,7 @@
 .sections-01-head {
-  height: 100vh;
+  height: 100%;
+  width: 100%;
   position: relative;
-
   .section01-bg {
     position: absolute;
     left: 50px;
@@ -13,7 +13,7 @@
   .section01-bg-1 {
     position: absolute;
     right: 50px;
-    top: 232px;
+    top: 380px;
     img {
       width: 600px;
     }
@@ -35,7 +35,7 @@
   .head-middle-block {
     width: 683px;
     height: 400px;
-    margin: 100px auto 0 auto;
+    margin: 270px auto 338px auto;
     text-align: center;
     font-family: 'Lora', serif;
     font-weight: 400;
@@ -46,7 +46,7 @@
     }
     p {
       font-size: 30px;
-      margin: 30px 0;
+      margin: 30px 0 40px 0;
     }
     span {
       text-align: center;

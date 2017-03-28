@@ -18,7 +18,7 @@
                 <span>+7 (495) 123-45-67</span>
             </div>
             <div class="col-md-2 header-contact">
-                <button class="discovery-button">
+                <button class="discovery-button"  data-toggle="modal" data-target="#myModal">
                     Заказать звонок
                 </button>
             </div>
@@ -33,7 +33,7 @@
                         Предложите своим покупателям сувениры «с душой», собранные со всей России
 и получите новый поток постоянных клиентов
                     </span>
-                    <button>
+                    <button data-toggle="modal" data-target="#myModal">
                         Хочу знать
                     </button>
                 </div>
@@ -45,5 +45,26 @@
             <img src="img/icons/mouse-icon.png" alt="">
             листайте вниз
         </span>
+    <!-- Модаль -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Заполните форму
+                        и мы вам перезвоним</h4>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <input type="text" name="Имя" placeholder="Как к вам обратиться?">
+                        <input type="text" name="Имя" placeholder="Телефон">
+                        <button>
+                            хочу знать
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 </header>
 <!-- close .header -->

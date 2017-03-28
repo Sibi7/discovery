@@ -35,7 +35,7 @@
                 <span>+7 (495) 123-45-67</span>
             </div>
             <div class="col-md-2 header-contact">
-                <button class="discovery-button">
+                <button class="discovery-button"  data-toggle="modal" data-target="#myModal">
                     Заказать звонок
                 </button>
             </div>
@@ -50,7 +50,7 @@
                         Предложите своим покупателям сувениры «с душой», собранные со всей России
 и получите новый поток постоянных клиентов
                     </span>
-                    <button>
+                    <button data-toggle="modal" data-target="#myModal">
                         Хочу знать
                     </button>
                 </div>
@@ -62,6 +62,27 @@
             <img src="img/icons/mouse-icon.png" alt="">
             листайте вниз
         </span>
+    <!-- Модаль -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                    <h4 class="modal-title" id="myModalLabel">Заполните форму
+                        и мы вам перезвоним</h4>
+                </div>
+                <div class="modal-body">
+                    <form action="">
+                        <input type="text" name="Имя" placeholder="Как к вам обратиться?">
+                        <input type="text" name="Имя" placeholder="Телефон">
+                        <button>
+                            хочу знать
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
 </header>
 <!-- close .header -->
 
@@ -80,7 +101,7 @@
                 <span>+7 (495) 123-45-67</span>
             </div>
             <div class="col-md-2 header-contact">
-                <button class="discovery-button">
+                <button class="discovery-button" data-toggle="modal" data-target="#myModal">
                     Заказать звонок
                 </button>
             </div>
@@ -149,7 +170,7 @@
                 <span>+7 (495) 123-45-67</span>
             </div>
             <div class="col-md-2 header-contact">
-                <button class="discovery-button">
+                <button class="discovery-button" data-toggle="modal" data-target="#myModal">
                     Заказать звонок
                 </button>
             </div>
@@ -177,10 +198,10 @@
                         <span></span>
                     </div>
                     <p>Ценители не материальных ценностей,
-                        а эмоций, которые несут подарки</p>
+                        а эмоций, которые несут подарки
+                    </p>
                 </div>
             </div>
-
         </div>
     </div>
     <span class="mouse">
@@ -203,68 +224,92 @@
                 <span>+7 (495) 123-45-67</span>
             </div>
             <div class="col-md-2 header-contact">
-                <button class="discovery-button">
+                <button class="discovery-button" data-toggle="modal" data-target="#myModal">
                     Заказать звонок
                 </button>
+
             </div>
             <div class="col-md-12">
-                <h1 >
+                <h1>
                     Успешный бизнес начинается
                     с маленького смелого решения
                 </h1>
-                <div class="col-md-6">
-                    <div class="col-md-12">
-                        <img src="img/section4/1.png" alt="">
-                        <h2>
-                            Решение дарить
-                            своим покупателям эмоции
-                        </h2>
-                        <p>Сколько безликих товаров вам доводилось видеть?
-                            В случае с нашей продукцией вы можете быть уверенны,
-                            что каждая позиция изготовлена "с душой",
-                            и займёт своё место в сердце даже самого
-                            требовательного покупателя</p>
-                    </div>
-                    <div class="col-md-12">
-                        <img src="img/section4/3.png" alt="">
-                        <h2>Упаковка, говорящая
-                            больше любых слов</h2>
-                        <p>Все начинается с того, что даже
-                            сам внешний вид подарка
-                            излучает энергетику, которая присуща
-                            индивидуально каждой позиции</p>
-                    </div>
-                    <div class="col-md-12">
-                        <img src="img/section4/5.png" alt="">
-                        <h2>
-                            Поставки
-                            точно в срок
-                        </h2>
-                        <p>
-                            Вы начинаете работу с самим производителем,
-                            поэтому все поставкив любых объемах
-                            будут на вашей витрине
-                            точно в обговоренный срок
-                        </p>
-                    </div>
+            </div>
+            <div class="col-md-6 left-block">
+                <div class="col-md-12">
+                    <img src="img/section4/1.png" alt="">
+                    <h2>Решение дарить
+                        своим покупателям эмоции</h2>
+                    <p>Сколько безликих товаров вам доводилось видеть?
+                        В случае с нашей продукцией вы можете быть уверенны,
+                        что каждая позиция изготовлена "с душой",
+                        и займёт своё место в сердце даже самого
+                        требовательного покупателя
+                    </p>
                 </div>
-                <div class="col-md-6">
-                    <div class="col-md-12">
-                        <img src="img/section4/2.png" alt="">
-                       <h2>
-                           Бесконечный креатив
-                           и тысячи километров в поисках идей
-                       </h2>
-                    </div>
-                    <div class="col-md-12 text-business" >
-                        <img src="img/section4/4.png" alt="">
-                        <h2>Готовые решения
-                            для любого человека и праздника</h2>
-                    </div>
+                <div class="col-md-12 col-md-offset-2">
+                    <img src="img/section4/3.png" alt="">
+                    <h2>Упаковка, говорящая
+                        больше любых слов</h2>
+                    <p>Сколько безликих товаров вам доводилось видеть?
+                        В случае с нашей продукцией вы можете быть уверенны,
+                        что каждая позиция изготовлена "с душой",
+                        и займёт своё место в сердце даже самого
+                        требовательного покупателя
+                    </p>
+                </div>
+                <div class="col-md-12">
+                    <img src="img/section4/5.png" alt="">
+                    <h2>Поставки
+                        точно в срок</h2>
+                    <p>Сколько безликих товаров вам доводилось видеть?
+                        В случае с нашей продукцией вы можете быть уверенны,
+                        что каждая позиция изготовлена "с душой",
+                        и займёт своё место в сердце даже самого
+                        требовательного покупателя
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 right-block">
+                <div class="col-md-12 col-md-offset-2">
+                    <img src="img/section4/2.png" alt="">
+                    <h2>Бесконечный креатив
+                        и тысячи километров в поисках идей</h2>
+                    <p>Сколько безликих товаров вам доводилось видеть?
+                        В случае с нашей продукцией вы можете быть уверенны,
+                        что каждая позиция изготовлена "с душой",
+                        и займёт своё место в сердце даже самого
+                        требовательного покупателя
+                    </p>
+                </div>
+                <div class="col-md-12">
+                    <img src="img/section4/4.png" alt="">
+                    <h2>Готовые решения
+                        для любого человека и праздника</h2>
+                    <p>Сколько безликих товаров вам доводилось видеть?
+                        В случае с нашей продукцией вы можете быть уверенны,
+                        что каждая позиция изготовлена "с душой",
+                        и займёт своё место в сердце даже самого
+                        требовательного покупателя
+                    </p>
                 </div>
             </div>
         </div>
     </div>
+    <div class="most-important">
+        <h2>
+            И Самое главное!
+        </h2>
+        <p>
+            Вы приобретаете сотни довольных улыбок ваших постоянных клиентов, которые вернутся
+            снова и снова
+        </p>
+        <button>Хочу стать частью команды</button>
+    </div>
+    <span class="mouse">
+            <img src="img/icons/mouse-icon.png" alt="">
+            листайте вниз
+        </span>
 </section>
 <!-- end successful-business.html-->
 <!-- start stand-out.html-->
@@ -284,7 +329,7 @@
                 <span>+7 (495) 123-45-67</span>
             </div>
             <div class="col-md-2 header-contact">
-                <button class="discovery-button">
+                <button class="discovery-button" data-toggle="modal" data-target="#myModal">
                     Заказать звонок
                 </button>
             </div>
@@ -323,6 +368,100 @@
         </span>
 </section>
 <!-- end stand-out.html-->
+<!-- start section-quote.html-->
+<section class="section-quote">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-3 logo">
+                <a href="/">
+                    <img src="img/section4/logo.png" alt="discovery">
+                </a>
+            </div>
+            <div class="col-md-5"></div>
+            <div class="col-md-2 header-contact">
+                <span>+7 (495) 123-45-67</span>
+            </div>
+            <div class="col-md-2 header-contact">
+                <button class="discovery-button" data-toggle="modal" data-target="#myModal">
+                    Заказать звонок
+                </button>
+            </div>
+            <div class="col-md-12 quotes text-center">
+                <span><img src="img/section7/qoutes.png" alt=""></span>
+                <div class="col-md-12">
+                    <p>Это Елена и она экономист. На работе ей поручили купить подарок начальнику, который очень любит
+                        путешествовать. Сейчас на работе очень много проблем, и он не выезжал из города уже около
+                        полугода.
+                        Елена хочет подарить ему что-то, что напомнит о былых поездках по России. И вот она, обойдя
+                        десятки
+                        магазинов, находит Воздух Петербурга
+                        и немного реки Нева, упакованные в шикарную упаковку. Через несколько дней после фурора на
+                        работе после
+                        такого шикарного подарка она возвращается за подарком своему отцу. Через полгода  вы уже будете
+                        знать ее
+                        в лицо,
+                        ведь все подарки она покупает у вас.
+                    </p>
+                </div>
+            </div>
+           <div class="col-md-12">
+               <div class="section-quote__slider">
+
+                   <div class="section-quote__item ">
+
+                       <div class="section-quote__item--img">
+                           <img src="img/section7/elena.png" alt="">
+                       </div>
+
+                       <div class="section-quote__item--name">
+
+                           <h3>Михаил</h3>
+                           <p>дизайнер</p>
+
+                       </div>
+
+                   </div>
+
+                   <div class="section-quote__item ">
+
+                       <div class="section-quote__item--img">
+                           <img src="img/section7/elena.png" alt="">
+                       </div>
+
+                       <div class="section-quote__item--name">
+
+                           <h3>Михаил</h3>
+                           <p>дизайнер</p>
+
+                       </div>
+
+                   </div>
+
+                   <div class="section-quote__item ">
+
+                       <div class="section-quote__item--img">
+                           <img src="img/section7/elena.png" alt="">
+                       </div>
+
+                       <div class="section-quote__item--name">
+
+                           <h3>Михаил</h3>
+                           <p>дизайнер</p>
+
+                       </div>
+
+                   </div>
+
+               </div>
+           </div>
+        </div>
+    </div>
+    <span class="mouse">
+            <img src="img/icons/mouse-icon.png" alt="">
+            листайте вниз
+        </span>
+</section>
+<!-- end section-quote.html-->
 
 <!-- main container-->
 
@@ -339,6 +478,7 @@
 <script src='js/jquery-ui.min.js' type="text/javascript"></script>
 <script src="js/bootstrap.min.js" type="text/javascript"></script>
 <script src="js/owl.carousel.min.js" type="text/javascript"></script>
+<script src="js/validation.js" type="text/javascript"></script>
 <script src="js/validation.js" type="text/javascript"></script>
 <script src="js/script.min.js" type="text/javascript"></script>
 </body>
