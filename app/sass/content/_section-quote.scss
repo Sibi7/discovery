@@ -59,7 +59,7 @@
       position: relative;
       float: left;
       border-radius: 50%;
-      margin-left: calc(50% - (90px/2));
+      margin-left: calc(36% - (90px/2));
       z-index: 2;
       img{
         width: 100%;
@@ -106,12 +106,14 @@
       background-image: url('../img/icons/next.png');
       background-repeat: no-repeat;
       object-fit: contain;
+      top: 30px;
     }
     .owl-prev{
       float: left;
       display: block;
       position: relative;
       color: transparent;
+      top: 30px;
       width: 18px;
       background-image: url('../img/icons/prev.png');
       background-repeat: no-repeat;
