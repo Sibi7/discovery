@@ -89,6 +89,64 @@
     margin-bottom: 30px;
   }
   // end section topical-goods
+
+  // section successful-business
+  .successful-business .logo{
+   text-align: center;
+  }
+  .successful-business .header-contact {
+    text-align: center;
+  }
+  .successful-business h1 {
+   width: 100%;
+    line-height: inherit;
+  }
+  .successful-business .most-important {
+    display: none;
+    width: 100%;
+    p{
+      width: 100%;
+    }
+  }
+  .successful-business h2 {
+    width: 100%;
+    line-height: inherit;
+    margin-left: 0;
+    margin-top: 50px;
+  }
+  .successful-business p {
+    margin-left: 0;
+    margin-top: 30px;
+    width: 100%;
+  }
+  .successful-business .left-block .col-md-12 {
+    margin-bottom: 0;
+  }
+  .successful-business .right-block .col-md-12 {
+    margin-top: 0;
+  }
+  .successful-business .left-block p{
+  }
+  .successful-business .right-block .col-md-12 {
+  }
+  .successful-business .right-block{
+    margin-bottom: 150px;
+  }
+  .successful-business .right-block p{
+  }
+
+  // end section successful-business
+  // stand-out section
+  .stand-out .logo  {
+    text-align: center;
+  }
+  .stand-out .header-contact{
+   text-align: center;
+  }
+  .stand-out h1 {
+    width: 100%;
+  }
+  // end stand-out section
 }
 
 @media only screen and (max-width: 736px) {
