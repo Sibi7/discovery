@@ -65,6 +65,30 @@
   }
   //end section-what-getting
 
+// section topical-goods
+  .topical-goods .fire {
+    display: none;
+  }
+  .topical-goods .logo{
+    text-align: center;
+  }
+  .topical-goods .header-contact {
+    text-align: center;
+  }
+  .topical-goods h1 {
+    margin: 30px auto;
+  }
+  .topical-goods p {
+    margin: 30px auto;
+    width: 100%;
+  }
+  .topical-goods .item {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  // end section topical-goods
 }
 
 @media only screen and (max-width: 736px) {
