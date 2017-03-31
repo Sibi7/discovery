@@ -50,7 +50,19 @@ $(document).ready(function () {
         });
 
     });
-});
 
+
+    var windowHeight = $(window).height();//переменная для определения высоты окна
+    var elements = $('.section-what-getting '),//блок элементов
+        item = $('.post');//скрытый елемент
+
+    $(window).scroll(function () {//при прокрутке окна
+        if (($(this).scrollTop() + windowHeight) >= elements.offset().top) {//до начала блока с классом how
+            item.each(function (i) {//функция задержки появления каждого элемента
+                $(this).delay((i++) * 500).fadeTo(1000, 1);
+            });
+        }
+    });
+});
 
 

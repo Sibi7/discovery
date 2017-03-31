@@ -1,3 +1,9 @@
+section{
+  float: left;
+  width: 100%;
+}
+
+
 .discovery-button {
   border: 1px solid #f5f5f5;
   border-radius: 50px;
@@ -131,4 +137,13 @@
   button{
     margin: 40px 0 70px 0 ;
   }
+}
+.post{
+  opacity:0;
+
+}.hidden{
+  opacity:0;
+}
+.visible{
+  opacity:1;
 }
