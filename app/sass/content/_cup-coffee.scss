@@ -20,7 +20,7 @@
     margin-top: 90px;
     margin-bottom: 150px;
     input{
-      width: 33.333%;
+      width: 325px;
       margin-left: 70px;
       text-align: left;
       display: block;
@@ -33,12 +33,58 @@
     button{
       width: 170px;
       height: 65px;
+      outline: none;
       background-color: #fee133;
       border-radius: 32px;
       display: block;
       float: left;
       margin-left: 70px;
+      font-family: Ubuntu;
+      font-size: 16px;
+      font-weight: 500;
       border: 0;
+      &:hover{
+        transition: 300ms ease;
+        transform: scale(1.03);
+      }
     }
   }
+  .coffee-footer{
+    width: 100%;
+    height: 460px;
+    position: relative;
+  }
+  .coffee-footer-contact{
+    width: 100%;
+    height: 467px;
+    background-color: white;
+    box-shadow: -4.1px 2.8px 15px rgba(17, 17, 17, 0.15);
+    position: absolute;
+    bottom:0;
+    margin: 0 auto;
+    h2{
+      margin-top: 80px;
+      text-align: center;
+      margin-bottom: 40px;
+      color: black;
+      font-family: 'Lora';
+      font-size: 36px;
+      font-weight: 400;
+
+    }
+    p:last-child{
+      margin-top: 40px;
+    }
+    span{
+      display: block;
+      margin-left: 55px;
+      color: black;
+      font-family: 'Ubuntu';
+      font-size: 18px;
+      font-weight: 300;
+      line-height: 32px;
+    }
+
+  }
+
 }

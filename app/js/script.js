@@ -19,6 +19,7 @@ $(document).ready(function () {
     });
 
 
+
     $('.sideScroll').click(function (event) {
         event.preventDefault(); // отменят стандартное свойство
         if($(this).hasClass('active')){
@@ -34,7 +35,21 @@ $(document).ready(function () {
         return false; // вышел из функции
     });
 
+    $(window).scroll(function () {
 
+        $('.slides').each(function () {  // прошлись по всем секция с классом
+            var target = $(this).attr('id'),
+                currentPosition = $(this).position().top,
+                targetPosition = currentPosition - $(document).scrollTop(),
+                href = $('a[href="#' + target + '"]');
+
+            if (targetPosition > -20 && targetPosition < 20) {//при условии попадания нужного элемента в диапазон 48 пикселей
+                $('.sideScroll').removeClass("active");
+                href.addClass('active');
+            }
+        });
+
+    });
 });
 
 

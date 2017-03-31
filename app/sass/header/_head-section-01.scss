@@ -22,7 +22,7 @@
   .head{
     position: fixed;
     height: 76px;
-    z-index: 9999;
+    z-index: 8;
     padding: 0;
   }
   .logo img {
@@ -48,6 +48,8 @@
     h1 {
       font-size: 60px;
       margin: 0;
+      font-family: 'Lora',serif;
+      line-height: 72px;
 
     }
     p {
@@ -57,12 +59,12 @@
     span {
       text-align: center;
       font-size: 18px;
-      font-family: 'Ubuntu', sans-serif;
+      font-family: 'Ubuntu';
       font-weight: 300;
       display: inline-block;
     }
     button {
-      font-family: 'Ubuntu', sans-serif;
+      font-family: 'Ubuntu';
       font-weight: 500;
       width: 240px;
       height: 70px;
