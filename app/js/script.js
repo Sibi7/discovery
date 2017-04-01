@@ -1,5 +1,12 @@
 $(document).ready(function () {
 
+    $("#modal-phone").mask("+7(999) 999-9999");
+    
+    $("#business-phone").mask("+7(999) 999-9999");
+
+    $("#ready-phone").mask("+7(999) 999-9999");
+    
+    $("#cup-coffee-phone").mask("+7(999) 999-9999");
 
     $('.section-quote__carousel').flexslider({
         animation: "slide",
