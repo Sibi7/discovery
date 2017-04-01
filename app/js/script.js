@@ -1,30 +1,54 @@
 $(document).ready(function () {
 
+    $("#modal-phone").mask("+7(999) 999-9999");
+    
+    $("#business-phone").mask("+7(999) 999-9999");
 
-    $('.section-quote__slider').owlCarousel({
-        loop:true,
-        margin:10,
-        nav:true,
-        responsive:{
-            0:{
-                items:1
-            },
-            600:{
-                items:1
-            },
-            1000:{
-                items:3
-            }
-        }
+    $("#ready-phone").mask("+7(999) 999-9999");
+    
+    $("#cup-coffee-phone").mask("+7(999) 999-9999");
+
+    $('.section-quote__carousel').flexslider({
+        animation: "slide",
+        controlNav: false,
+        animationLoop: false,
+        slideshow: false,
+        itemWidth: 220,
+        itemMargin: 0,
+        asNavFor: '.section-quote__slider'
     });
 
+    $('.section-quote__slider').flexslider({
+        animation: "slide",
+        controlNav: false,
+        animationLoop: false,
+        slideshow: false,
+        sync: ".section-quote__carousel"
+    });
+
+    /*$('.section-quote__slider').owlCarousel({
+     loop:true,
+     margin:10,
+     nav:true,
+     responsive:{
+     0:{
+     items:1
+     },
+     600:{
+     items:1
+     },
+     1000:{
+     items:3
+     }
+     }
+     });*/
 
 
     $('.sideScroll').click(function (event) {
         event.preventDefault(); // отменят стандартное свойство
-        if($(this).hasClass('active')){
+        if ($(this).hasClass('active')) {
             $(this).removeClass('active');
-        } else{
+        } else {
             $('.sideScroll').removeClass('active'); // удаляет класс у всех дочерних элем.
             $(this).addClass('active');
         }
@@ -43,7 +67,7 @@ $(document).ready(function () {
                 targetPosition = currentPosition - $(document).scrollTop(),
                 href = $('a[href="#' + target + '"]');
 
-            if (targetPosition > -20 && targetPosition < 20) {//при условии попадания нужного элемента в диапазон 48 пикселей
+            if (targetPosition > -10 && targetPosition < 10) {//при условии попадания нужного элемента в диапазон 48 пикселей
                 $('.sideScroll').removeClass("active");
                 href.addClass('active');
             }
@@ -63,6 +87,29 @@ $(document).ready(function () {
             });
         }
     });
+
+
+    $('#sections-01-head .section01-bg').css({opacity: '1'}).addClass('animated fadeInDown');
+    $('#sections-01-head .section01-bg-1').css({opacity: '1'}).addClass('animated fadeInDown');
+    
+    $(window).scroll(function () {
+
+        var h = $(window).height();
+
+        if (($(this).scrollTop() + h) >= $('#topical-goods').offset().top) {
+            $('#topical-goods .fire').css({opacity: '1'}).addClass('animated fadeInDown');
+            $('#topical-goods .money').css({opacity: '1'}).addClass('animated fadeInDown');
+        }
+        if (($(this).scrollTop() + h) >= $('#business-growth').offset().top) {
+            $('#business-growth .earth').css({opacity: '1'}).addClass('animated fadeInLeft');
+            $('#business-growth .toothpiece').css({opacity: '1'}).addClass('animated fadeInRight');
+        }
+        if (($(this).scrollTop() + h) >= $('#cup-coffee').offset().top) {
+            $('#cup-coffee .river-bg').css({opacity: '1'}).addClass('animated fadeInLeft');
+        }
+
+    });
+
 });
 
 

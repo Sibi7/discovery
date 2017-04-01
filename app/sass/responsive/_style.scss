@@ -11,8 +11,12 @@
    display: none;
   }
   // section header
+  .discovery-button {
+    width: 100%;
+  }
   h1{
     font-size: 200%!important;
+    line-height: normal;
   }
   .sections-01-head .section01-bg-1 {
     right: 0;
@@ -30,6 +34,13 @@
     margin: 243px auto 100px;
     text-align: center;
   }
+
+  .sections-01-head .head-middle-block{
+    h1{
+      line-height: normal;
+    }
+  }
+
   .mouse {
     display: none;
   }
@@ -37,17 +48,20 @@
     font-size: 200%;
   }
 
-  .section-what-getting .logo {
-   text-align: center;
-  }
-
-  .section-what-getting h1 {
-    margin-top: 30px;
-  }
-
   // end section header
 
   // section-what-getting
+  .section-what-getting h1 {
+    line-height: normal;
+    margin-top: 30px;
+  }
+  .section-what-getting h2 {
+    width: 100%;
+    line-height: normal;
+  }
+  .section-what-getting .logo {
+    text-align: center;
+  }
 
   .section-what-getting .header-contact {
     text-align: center;
@@ -66,6 +80,10 @@
   }
   .section-what-getting h2 {
     margin-bottom: 15px;
+  }
+  .section-what-getting p {
+    line-height: normal;
+    width: 100%;
   }
   //end section-what-getting
 
@@ -95,6 +113,12 @@
   // end section topical-goods
 
   // section successful-business
+
+  .five-step{
+    display: none;
+  }
+
+
   .successful-business .logo{
    text-align: center;
   }
@@ -104,6 +128,7 @@
   .successful-business h1 {
    width: 100%;
     line-height: inherit;
+    margin: 30px auto;
   }
   .successful-business .most-important {
     display: none;
@@ -121,10 +146,12 @@
   .successful-business p {
     margin-left: 0;
     margin-top: 30px;
+    margin-bottom: 30px;
     width: 100%;
   }
   .successful-business .left-block .col-md-12 {
     margin-bottom: 0;
+    margin-top: 0;
   }
   .successful-business .right-block .col-md-12 {
     margin-top: 0;
@@ -134,7 +161,7 @@
   .successful-business .right-block .col-md-12 {
   }
   .successful-business .right-block{
-    margin-bottom: 150px;
+    margin-bottom: 30px;
   }
   .successful-business .right-block p{
   }
@@ -149,6 +176,8 @@
   }
   .stand-out h1 {
     width: 100%;
+    line-height: normal;
+    margin: 30px 0;
   }
   // end stand-out section
 }

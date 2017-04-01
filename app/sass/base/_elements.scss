@@ -3,16 +3,17 @@ section{
   width: 100%;
 }
 
-
 .discovery-button {
-  border: 1px solid #f5f5f5;
+  border: 2px solid #f5f5f5;
   border-radius: 50px;
+  margin-bottom: 30px;
   width: 160px;
   height: 50px;
   outline: 0;
   background: transparent;
   font-family: 'Ubuntu', sans-serif;
   font-weight: 300;
+  transition: 300ms ease;
   &:hover {
     transition: 300ms ease;
     transform: scale(1.03);
@@ -40,14 +41,14 @@ section{
     display: block;
     border-bottom: 1px solid #222222;
     color: black;
-    font-family: Ubuntu;
+    font-family: 'Ubuntu', sans-serif;;
     font-size: 14px;
     font-weight: 300;
     line-height: 30px;
     &::placeholder {
       color: #000000;
       opacity: 1;
-      font-family: 'Ubuntu';
+      font-family: 'Ubuntu', sans-serif;;
       font-size: 14px;
       font-weight: 300;
       line-height: 30px;
@@ -63,7 +64,7 @@ section{
     margin: 40px auto;
     height: 65px;
     color: black;
-    font-family: Ubuntu;
+    font-family: 'Ubuntu', sans-serif;;
     font-size: 16px;
     font-weight: 500;
     line-height: 30px;
@@ -81,8 +82,8 @@ section{
   right: 160px;
   z-index: 20;
   width: 20px;
-  top: 25%;
-  height: 200px;
+  top: calc(50% - (430px/2));
+  height: 430px;
   .sideScroll {
     cursor: pointer;
     display: block;
@@ -131,7 +132,6 @@ section{
 }
 .modal-dialog{
   width: 444px;
-
 }
 .modal-dialog {
   button{
@@ -146,4 +146,120 @@ section{
 }
 .visible{
   opacity:1;
+}
+
+.animated {
+  -webkit-animation-duration: 4s;
+  animation-duration: 4s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.animated.infinite {
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.animated.hinge {
+  -webkit-animation-duration: 6s;
+  animation-duration: 6s;
+}
+
+@-webkit-keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInDown {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, -100%, 0);
+    transform: translate3d(0, -100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInDown {
+  -webkit-animation-name: fadeInDown;
+  animation-name: fadeInDown;
+}
+
+@-webkit-keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInLeft {
+  -webkit-animation-name: fadeInLeft;
+  animation-name: fadeInLeft;
+}
+
+@-webkit-keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none;
+  }
+}
+
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
 }

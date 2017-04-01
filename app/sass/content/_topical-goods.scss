@@ -7,12 +7,14 @@
     bottom: 50px;
     right: 150px;
     z-index: -2;
+    opacity: 0;
   }
   .fire {
     position: absolute;
     top: 80px;
     left: 0;
     z-index: -2;
+    opacity: 0;
   }
   .item{
     position: relative;
@@ -38,7 +40,6 @@
   }
   p{
     width: 304px;
-    height: 49px;
     text-align: center;
     color: black;
     font-family: 'Ubuntu';
