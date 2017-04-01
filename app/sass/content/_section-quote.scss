@@ -5,29 +5,69 @@
   background-color: #a4d5ff;
   .quotes {
     margin-top: 262px;
-    p {
-      width: 994px;
+  }
+  &__slider {
+    display: block;
+    position: relative;
+    float: left;
+    width: 100%;
+    background: transparent;
+    border: none;
+    .flex-direction-nav {
+      display: none;
+    }
+    .slides{
+      display: block;
+      position: relative;
+      float: left;
+      width: 100%;
+      margin-top: 44px;
+    }
+    &--item{
+      display: block;
+      position: relative;
+      float: left;
+      width: 100%;
       height: 178px;
       color: black;
-      margin: 80px auto;
-      font-family: 'Ubuntu';
+      font-family: 'Ubuntu', sans-serif;
       font-size: 18px;
       font-weight: 300;
       line-height: 32px;
+      @include breakpoint(max-width 670px){
+        height: 368px;
+        font-size: 14px;
+        line-height: 24px;
+      }
     }
-
   }
-  &__slider {
-    @include display-flex(flex);
-    @include flex-wrap(wrap);
-    @include flex-direction(roo);
-    @include justify-content(space-between);
+  &__carousel{
+   display: block;
     position: relative;
     float: left;
-    width: calc(100% - (117px * 2));
-    margin-left: 117px;
-    margin-right: 117px;
-    margin-bottom: 332px;
+    width: 670px;
+    margin-left: calc(50% - (670px/2));
+    background: transparent;
+    border: none;
+    margin-bottom: 197px;
+    @include breakpoint(max-width 670px){
+      width: 100%;
+      margin-left: 0;
+    }
+    .slides{
+      display: block;
+      position: relative;
+      width: 100%;
+      float: left;
+      li{
+        opacity: 0.6;
+        cursor: pointer;
+      }
+      li.flex-active-slide{
+        opacity: 1;
+        cursor: pointer;
+      }
+    }
   }
   &__item {
     display: block;
@@ -42,7 +82,6 @@
       position: relative;
       float: left;
       border-radius: 50%;
-      margin-left: calc(36% - (90px/2));
       z-index: 2;
       img{
         width: 100%;
@@ -65,7 +104,7 @@
       }
       p {
         color: black;
-        font-family: 'Ubuntu';
+        font-family: 'Ubuntu', sans-serif;
         font-size: 16px;
         font-weight: 300;
         margin: 0;
