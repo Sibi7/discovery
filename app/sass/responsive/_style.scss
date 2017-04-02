@@ -2,13 +2,21 @@
 }
 
 @media only screen and (max-width: 980px) {
-
+  .sections-01-head .head {
+    background-color: #fee133;
+    width: 100%;
+  }
 }
 
 @media only screen and (max-width: 770px) {
-
+  .sections-01-head .head {
+    width: 100%;
+  }
   .pellet {
     display: none;
+  }
+  .cup-coffee .coffee-footer-contact span {
+    margin-left: 0;
   }
   // section header
   .discovery-button {
@@ -329,16 +337,15 @@
     padding-top: 40px;
     text-align: center;
   }
- .row{
-   margin-right: 0;
- }
   // end section cup-coffee
 
 
 }
 
 @media only screen and (max-width: 736px) {
-
+.row{
+  margin-right:0;
+}
 }
 
 @media only screen and (max-width: 500px) {
