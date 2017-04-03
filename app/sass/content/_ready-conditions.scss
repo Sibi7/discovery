@@ -4,7 +4,6 @@
   display: block;
  h1{
    width: 803px;
-   height: 86px;
    margin: 260px auto 70px auto;
    color: black;
    font-family: 'Lora', serif;
@@ -78,5 +77,8 @@
       font-weight: 300;
       line-height: 32px;
     }
+  }
+  .block-item{
+    height: 250px;
   }
 }
