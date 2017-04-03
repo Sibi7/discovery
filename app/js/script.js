@@ -1,11 +1,11 @@
 $(document).ready(function () {
 
     $("#modal-phone").mask("+7(999) 999-9999");
-    
+
     $("#business-phone").mask("+7(999) 999-9999");
 
     $("#ready-phone").mask("+7(999) 999-9999");
-    
+
     $("#cup-coffee-phone").mask("+7(999) 999-9999");
 
     $('.section-quote__carousel').flexslider({
@@ -26,23 +26,27 @@ $(document).ready(function () {
         sync: ".section-quote__carousel"
     });
 
-    /*$('.section-quote__slider').owlCarousel({
-     loop:true,
-     margin:10,
-     nav:true,
-     responsive:{
-     0:{
-     items:1
-     },
-     600:{
-     items:1
-     },
-     1000:{
-     items:3
-     }
-     }
-     });*/
+    /*fullpage scroll*/  
+    var position = 1; 
+    
+    $(document).on('DOMMouseScroll mousewheel', function (event) {
+        event.preventDefault();
+        var log = event.originalEvent.deltaY;
+        if (log > 0) {
+            if (position > 0 && position < 9) {
+                position++;               
+            }
+        } else if (position > 1 && position < 10) {
+            position--;
+        }        
+            var section = $('.vertical-scrolling' + position),
+            sectionPosition = section.offset().top;
+            console.log( position, log, section, sectionPosition );       
+        $('html,body').animate({scrollTop: sectionPosition}, 'slow');
+    });
 
+    /*close fullpage scroll*/
+    
 
     $('.sideScroll').click(function (event) {
         event.preventDefault(); // отменят стандартное свойство
@@ -75,7 +79,7 @@ $(document).ready(function () {
 
     });
 
-
+    /*animation*/
     var windowHeight = $(window).height();//переменная для определения высоты окна
     var elements = $('.section-what-getting '),//блок элементов
         item = $('.post');//скрытый елемент
@@ -91,7 +95,7 @@ $(document).ready(function () {
 
     $('#sections-01-head .section01-bg').css({opacity: '1'}).addClass('animated fadeInDown');
     $('#sections-01-head .section01-bg-1').css({opacity: '1'}).addClass('animated fadeInDown');
-    
+
     $(window).scroll(function () {
 
         var h = $(window).height();
@@ -109,7 +113,7 @@ $(document).ready(function () {
         }
 
     });
-
+    /*close animation*/
 });
 
 
