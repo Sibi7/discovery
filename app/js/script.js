@@ -27,22 +27,26 @@ $(document).ready(function () {
     });
 
     /*fullpage scroll*/  
-    var position = 1; 
+    var position = 1;//переменная для позиции, приравнивается 1 
     
-    $(document).on('DOMMouseScroll mousewheel', function (event) {
-        event.preventDefault();
-        var log = event.originalEvent.deltaY;
-        if (log > 0) {
-            if (position > 0 && position < 9) {
-                position++;               
+    $(document).on('DOMMouseScroll mousewheel', function (event) {//при прокрутке колесика мыши
+        event.preventDefault();//сбрасываем свойство по умолчанию
+        if($('body').attr('data-scroll') == '1'){//проверям наличия у body атрибута скрола равного 1
+            $('body').attr('data-scroll', '0');//сбрасываем значения скрола, чтобы пользователь мог проскролить только один блок!!!
+            var log = event.originalEvent.deltaY;//определяем изменение положения колеса            
+            if (log > 0) {//при изменении положения колеса
+                if (position > 0 && position < 9) {//если значение позиции от 1 до 8
+                    position++;//увеличиваем счетчик на 1
+                }
+            } else if (position > 1 && position < 10) {//если значение позиции от 2 до 9
+                position--;//уменьшаем счетчик на 1
             }
-        } else if (position > 1 && position < 10) {
-            position--;
+            var section = $('.vertical-scrolling' + position),//добовляем к классу нужной секции номер для скрола
+                sectionPosition = section.offset().top;//расчитываем положение элемента относительно окна браузера 
+            $('html,body').animate({scrollTop: sectionPosition}, 1000, function () {//скролим вверх или вниз
+                $('body').attr('data-scroll', '1');//запрещаем скрол по умолчанию, чтобы пользователь мог прокрутить только одну секцию поворот колеса!!!
+            });
         }        
-            var section = $('.vertical-scrolling' + position),
-            sectionPosition = section.offset().top;
-            console.log( position, log, section, sectionPosition );       
-        $('html,body').animate({scrollTop: sectionPosition}, 'slow');
     });
 
     /*close fullpage scroll*/
